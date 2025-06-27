@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "workspaces": ["web", "functions"],
+  "scripts": {
+    "dev": "npm --workspace web run dev",
+    "build": "npm --workspace web run build && npm --workspace functions run build",
+    "test": "npm --workspaces run test",
+    "deploy": "npm --workspace functions run deploy"
+  }
+}
